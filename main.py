@@ -1,4 +1,3 @@
-import json
 import os
 
 from flask import jsonify, Flask, render_template
@@ -32,7 +31,7 @@ def get_meetings_list():
                                     'participants_amt': meeting['participants']})
         return jsonify(meetings_for_ui)
     except:
-        print('errors something')
+        print('errors handlers tbd')
 
 
 @app.route('/stop_meeting/<meeting_id>', methods=['PUT'])
