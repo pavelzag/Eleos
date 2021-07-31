@@ -2,7 +2,7 @@
 
 This is the Eleos test app.
 
-These are the steps to run the Flask web service:
+These are the steps to run the Flask web service using Python:
 
 1. Verify Python3 is installed on your machine: 
 Run `python --version`
@@ -28,6 +28,19 @@ If it's not installed, use the instructions here: https://pip.pypa.io/en/stable/
 `
 8. Using the browser go to `http://<your_local_ip>/index`
 Enjoy!
+
+------------
+
+These are the steps to run the Flask web service using Docker
+
+1. Build the docker image:
+`docker build -t eleos_test_image .`
+
+2. Add the Zoom API token to your path:
+`export ZOOM_TOKEN="<token>"
+
+3. Run the created Docker image using the following command:
+`docker run --env ZOOM_TOKEN=$ZOOM_TOKEN -dp 80:80 eleos_test_image`
 
 ![alt text](https://raw.githubusercontent.com/pavelzag/Eleos/main/images/screenshot1.png)
 
