@@ -18,6 +18,7 @@ function stop_meeting(meeting_id_to_delete) {
 $(document).ready(function(){
     $('body').on('click', '.stop_meeting', function() {
     var meeting_id_to_delete = $(this).context.id;
+    alert('Stopping ' + meeting_id_to_delete + ' meeting')
     stop_meeting(meeting_id_to_delete);
     });
 });
