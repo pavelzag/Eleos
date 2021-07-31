@@ -27,6 +27,8 @@ If it's not installed, use the instructions here: https://pip.pypa.io/en/stable/
 `python src/main.py
 `
 8. Using the browser go to `http://<your_local_ip>/index`
-![alt text](https://raw.githubusercontent.com/pavelzag/Eleos/main/images/screenshot1.png)
 Enjoy!
+
+![alt text](https://raw.githubusercontent.com/pavelzag/Eleos/main/images/screenshot1.png)
+
 
